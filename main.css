@@ -22,7 +22,7 @@ a {
 }
 
 img {
-	display: flex;
+	display: block;
     margin-left: auto;
     margin-right: auto;
     max-height: 100%;
@@ -37,17 +37,6 @@ img.profile-pic {
 	width: 30%;
 	object-fit: cover;
 	border-radius: 50%;
-}
-
-img.icon {
-	display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
-    max-height: 100%;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    object-fit: contain;
 }
 
 .container {
@@ -78,6 +67,19 @@ img.icon {
 	max-height: 100%;
 	overflow: auto;
 }
+
+.col.image {
+	display: flex;
+	flex-basis: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin: 10%;
+	padding: 0.25rem;
+	max-width: 100%;
+	max-height: 100%;
+	overflow: auto;
+}
+
 
 .col.is-1 {
 	flex: none;
